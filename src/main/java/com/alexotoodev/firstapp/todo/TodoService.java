@@ -1,10 +1,15 @@
 package com.alexotoodev.firstapp.todo;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
+
+@Service
 public class TodoService {
-private static  List<Todo> todos;
+private static  List<Todo> todos = new ArrayList<Todo>();
 static{
     todos.add(new Todo(1, "tester", "learn spring boot", LocalDate.now().plusYears(1), false));
     todos.add(new Todo(2, "tester", "aws", LocalDate.now().plusYears(1), false));

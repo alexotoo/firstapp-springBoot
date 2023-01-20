@@ -10,7 +10,9 @@
 
 <body>
     <h1>Your Welcome Page</h1>
-    <h3>hello - ${name} your password is : ${password}</h3>
+    <h3>hello - ${name}
+        <p><a href="list-todos">Manage your todos</a></p>
+    </h3>
 </body>
 
 </html>
