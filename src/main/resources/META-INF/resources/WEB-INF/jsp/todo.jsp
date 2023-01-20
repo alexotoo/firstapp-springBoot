@@ -20,7 +20,7 @@
             <h4>Enter Todo</h4>
 
             <form method="post">
-                <input class="form-control" type="text" placeholder="enter description">
+                <input class="form-control" type="text" placeholder="enter description" name="description">
                 <button type="submit" class="btn btn-primary my-4">Submit</button>
             </form>
 
