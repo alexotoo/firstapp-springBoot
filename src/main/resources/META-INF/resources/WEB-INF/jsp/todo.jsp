@@ -21,7 +21,8 @@
                 <h4>Enter Todo</h4>
 
                 <form:form method="post" modelAttribute="todo">
-                    <form:input class="form-control" type="text" placeholder="enter description" path="description" />
+                    <form:input class="form-control" type="text" placeholder="enter todos" path="description" />
+                    <form:errors class="form-control text-warning" path="description" />
                     <form:input class="form-control" type="hidden" path="id" />
                     <form:input class="form-control" type="hidden" path="done" />
                     <button type="submit" class="btn btn-primary my-4">Submit</button>
