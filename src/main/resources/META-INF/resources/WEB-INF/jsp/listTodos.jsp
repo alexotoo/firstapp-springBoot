@@ -12,15 +12,26 @@
     </head>
 
     <body>
-        <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-light mb-3 p-1 px-4">
+            <a class="navbar-brand m-1" href="https://courses.in28minutes.com">Alexotoodev</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/list-todos">Todos</a></li>
+                </ul>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+            </ul>
+        </nav>
 
+        <div class="container">
             <h1>Welcome ${name}</h1>
             <hr>
             <h3>Here is your list :</h3>
             <table class="table">
                 <thead>
                     <tr>
-                        <th>id</th>
                         <th>Description</th>
                         <th>Target Date</th>
                         <th>Is Done</th>
@@ -31,7 +42,6 @@
                 <tbody>
                     <c:forEach items="${todos}" var="todo">
                         <tr>
-                            <td>${todo.id}</td>
                             <td>${todo.description}</td>
                             <td>${todo.targetDate}</td>
                             <td>${todo.done}</td>
